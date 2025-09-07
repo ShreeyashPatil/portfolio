@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000" />
+  <meta name="author" content="Shreeyash Patil" />
+  <title>Atomic Asher Official Website | Shreeyash Patil</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-pages.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+</head>
+
+<body class="body">
+  <header>
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="shreeyash patil logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="index.html" tabindex="0" aria-label="Home menu button">
+              Home
+            </a>
+          </li>
+          <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="index.html#projects" aria-label="projects menu button">
+              Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li class="mobile-navbar-tabs-li home" onclick="hidemenubyli()">
+          <a href="index.html" tabindex="0" aria-label="Home menu button">
+            Home
+          </a>
+        </li>
+        <li class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="index.html#projects" tabindex="0" aria-label="projects menu button">
+            Projects
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="project-page-container">
+      <div class="blob"></div>
+      
+      <div class="project-content">
+        <div class="project-header" data-aos="fade-up">
+          <h1 class="project-title">Meteor Defender – Simple Space Fighter Game</h1>
+          <p class="project-short-desc">
+Destroy meteors and protect your spacecraft.<br>
+                  Earn a high score while avoiding damage.<br>
+                  Simple 2D animation game with basic controls.          </p>
+        </div>
+
+        <div class="project-details" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-description">
+            <h2>About This Project</h2>
+            <p>
+This was my first ever game project, where you play as a space fighter pilot facing a constant meteor rain.<br>
+The player’s goal is to destroy incoming meteors by shooting them, earning points for each destroyed meteor.<br>
+There is no specific ending or story progression—just survive as long as possible.<br>
+The player has a limited HP bar that decreases every time a meteor hits the spacecraft.<br>
+If the HP reaches zero, the game ends, and the player’s score is saved in the top scores list.<br>
+The game is made with simple 2D animations, basic controls, and a focus on straightforward fun and challenge.<br>
+It’s not fancy, but it taught me the basics of game design and programming, especially handling animations, scoring systems, and player interactions.
+            </p>
+          </div>
+
+          <div class="project-screenshot" data-aos="fade-up" data-aos-delay="400">
+            <img src="src/webp/meteor.webp" alt="atomicasher website preview image" />
+          </div>
+        </div>
+
+        <div class="project-actions" data-aos="fade-up" data-aos-delay="600">
+          <a href="index.html#projects" class="back-to-projects-btn">
+            <span>← Back to Projects</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

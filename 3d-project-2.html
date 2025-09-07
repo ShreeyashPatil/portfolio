@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000" />
+  <meta name="author" content="Shreeyash Patil" />
+  <title>With Your Dog | Shreeyash Patil</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-pages.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+</head>
+
+<body class="body">
+  <header>
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="shreeyash patil logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="index.html" tabindex="0" aria-label="Home menu button">
+              Home
+            </a>
+          </li>
+          <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="index.html#projects" aria-label="projects menu button">
+              Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li class="mobile-navbar-tabs-li home" onclick="hidemenubyli()">
+          <a href="index.html" tabindex="0" aria-label="Home menu button">
+            Home
+          </a>
+        </li>
+        <li class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="index.html#projects" tabindex="0" aria-label="projects menu button">
+            Projects
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="project-page-container">
+      <div class="blob"></div>
+      
+      <div class="project-content">
+        <div class="project-header" data-aos="fade-up">
+          <h1 class="project-title">Last Call – Narrative Puzzle Adventure</h1>
+          <p class="project-short-desc">
+                  Explore an abandoned house in the middle of a forest.<br>
+Receive a mysterious call for help from your missing friend.<br>
+Uncover hidden clues and secrets to solve the mystery.           </p>
+        </div>
+
+        <div class="project-details" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-description">
+            <h2>About This Project</h2>
+            <p>
+              In this prototype game, the player steps into a tense, mysterious atmosphere as they visit an abandoned house deep inside a forest.<br>
+After receiving a phone call from their missing friend, they must explore the creepy surroundings to uncover secrets piece by piece.<br>
+Players collect strange symbols, mysterious clues, hidden maps, and useful tools by solving card-based puzzles, all connected to the narrative.<br>
+The goal is to solve the mystery of the abandoned house by strategically collecting sets of clues while piecing together what happened.<br>
+Each decision brings players closer to discovering the dark secret or failing to escape in time.
+            </p>
+          </div>
+
+          <div class="project-screenshot" data-aos="fade-up" data-aos-delay="400">
+            <img src="src/webp/last-call.webp" alt="withyourdog website preview image" />
+          </div>
+        </div>
+
+        <div class="project-actions" data-aos="fade-up" data-aos-delay="600">
+          <a href="index.html#projects" class="back-to-projects-btn">
+            <span>← Back to Projects</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

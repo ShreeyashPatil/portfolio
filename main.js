@@ -115,3 +115,36 @@ const windowResize = e => {
 
 window.addEventListener("mousemove", mouseMove);
 window.addEventListener("resize", windowResize);
+
+// Certification Modal Functions
+function openCertificationModal(imageName, title) {
+    const modal = document.getElementById("certificationModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalTitle = document.getElementById("modalTitle");
+    
+    modalImage.src = `src/webp/${imageName}`;
+    modalTitle.textContent = title;
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+}
+
+function closeCertificationModal() {
+    const modal = document.getElementById("certificationModal");
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Restore scrolling
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("certificationModal");
+    if (event.target === modal) {
+        closeCertificationModal();
+    }
+}
+
+// Close modal with Escape key
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeCertificationModal();
+    }
+});

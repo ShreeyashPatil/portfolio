@@ -225,6 +225,110 @@ writing narratives, and developing engaging player experiences.
     </section>
     <!-- achievements section ends -->
 
+    <section class="certifications-section-container" id="certifications">
+      <div class="certifications-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Certifications heading">
+            Certifications
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="certification-cards-div">
+          <div data-aos="fade-up" class="certification-card-wrapper">
+            <div class="certification-card" onclick="openCertificationModal('certification1.webp', 'Introduction to Game Design')">
+              <div class="certification-info">
+                <div class="certification-icon">🎓</div>
+                <article class="CertificationTitle">Introduction to Game Design</article>
+                <p class="CertificationDescription">
+                  California Institute of the Arts
+                </p>
+                <div class="certification-badge">
+                  <span>08/2025-09/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="certification-card-wrapper">
+            <div class="certification-card" onclick="openCertificationModal('certification2.webp', 'Story and Narrative Development for Video Games')">
+              <div class="certification-info">
+                <div class="certification-icon">📚</div>
+                <article class="CertificationTitle">Story and Narrative Development</article>
+                <p class="CertificationDescription">
+                  California Institute of the Arts
+                </p>
+                <div class="certification-badge">
+                  <span>08/2025-09/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="certification-card-wrapper">
+            <div class="certification-card" onclick="openCertificationModal('certification3.webp', 'World Design for Video Games')">
+              <div class="certification-info">
+                <div class="certification-icon">🌍</div>
+                <article class="CertificationTitle">World Design for Video Games</article>
+                <p class="CertificationDescription">
+                  California Institute of the Arts
+                </p>
+                <div class="certification-badge">
+                  <span>08/2025-09/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="certification-card-wrapper">
+            <div class="certification-card" onclick="openCertificationModal('certification4.webp', 'Character Design for Video Games')">
+              <div class="certification-info">
+                <div class="certification-icon">👤</div>
+                <article class="CertificationTitle">Character Design for Video Games</article>
+                <p class="CertificationDescription">
+                  California Institute of the Arts
+                </p>
+                <div class="certification-badge">
+                  <span>08/2025-09/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="certification-card-wrapper">
+            <div class="certification-card" onclick="openCertificationModal('certification5.webp', 'Game Design Document: Define the Art & Concepts')">
+              <div class="certification-info">
+                <div class="certification-icon">📋</div>
+                <article class="CertificationTitle">Game Design Document</article>
+                <p class="CertificationDescription">
+                  California Institute of the Arts
+                </p>
+                <div class="certification-badge">
+                  <span>08/2025-09/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="certification-card-wrapper">
+            <div class="certification-card" onclick="openCertificationModal('certification6.webp', 'Game Design and Development with Unity Specialization')">
+              <div class="certification-info">
+                <div class="certification-icon">🎮</div>
+                <article class="CertificationTitle">Unity Specialization</article>
+                <p class="CertificationDescription">
+                  California Institute of the Arts
+                </p>
+                <div class="certification-badge">
+                  <span>08/2025-09/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- certifications section ends -->
+
     <section class="skills-section-container" id="skills">
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
@@ -503,6 +607,19 @@ Simple, fun, and competitive multiplayer action.
     </div>
   </footer>
   <!-- footer ends here -->
+
+  <!-- Certification Modal -->
+  <div id="certificationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCertificationModal()">&times;</span>
+      <div class="modal-header">
+        <h2 id="modalTitle"></h2>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Certification" />
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 
